@@ -1,4 +1,3 @@
-graph TD
     subgraph "IDENTIFICATION"
         A["<b>Records identified from databases</b><br/>(Scopus, Web of Science, Google Scholar)<br/>n = 1,250"]
     end
