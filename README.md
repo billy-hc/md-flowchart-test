@@ -2,11 +2,6 @@ graph TD
     subgraph "IDENTIFICATION"
         A["<b>Records identified from databases</b><br/>(Scopus, Web of Science, Google Scholar)<br/>n = 1,250"]
     end
-    
-    %% This invisible node adds a small gap to prevent the arrow
-    %% from overlapping with the 'SCREENING' label below.
-    gap( )
-    style gap fill:none,stroke:none
 
     subgraph "SCREENING"
         B["<b>Records after duplicates removed</b><br/>n = 1,040"]
@@ -20,7 +15,7 @@ graph TD
     end
 
     %% Flow and Connections
-    A --> gap --> B %% The flow now goes through the invisible gap
+    A --> B
     B --> Rem1
     B --> C
     C --> Rem2
